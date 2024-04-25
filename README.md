@@ -14,10 +14,11 @@ simple project built using fast api.
 
 
 <h3> How to start ? </h3>
-<p> command <i> uvicorn main:app --reload</i> </p>\
+<p>command:  <i> uvicorn main:app --reload</i> </p>
 <p>main is file name, app is fastapi object</p>
 
 <ol>References</ol>
 <li>https://fastapi.tiangolo.com/tutorial/</li>
 <li>https://fastapi.tiangolo.com/#example </li>
+</ol>
 
