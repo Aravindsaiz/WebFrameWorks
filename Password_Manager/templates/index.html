@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<p style="color: blue;">Hello {{ user }}, Welcome!! </p>
+
+<div>
+    <button id="logout" style="background-color: red;border: 2px; color: white;" type="submit">SIGNOUT</button>
+    <script type="text/javascript">
+        const btn = document.getElementById("logout");
+        const logoutFunction =  () => { location.href="http://127.0.0.1:8003/logout"};
+        btn.onclick = logoutFunction
+
+    </script>
+</div>
+
+{% endblock %}
