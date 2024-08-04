@@ -23,9 +23,13 @@ class DB():
         login_collection = self.mydb["userDetails"]
         response = login_collection.insert_one({"_id" : id, "userName":username, "secret": pwd, "phone":phoneno})
         print(response)
+    
+    def get_one_document(self,primaryKey,value):
+        collection = self.mydb["userDetails"]
+        document = collection.find_one({primaryKey:value})
+        return document
 
 
-# obj1 = DB()
-# print(obj1.is_initialized)
-# obj2 = DB()
-# print(obj2.is_initialized)
+if __name__ == "__main__":
+    obj = DB()
+    

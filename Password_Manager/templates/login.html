@@ -19,6 +19,7 @@
     
 </form>
 <button id = "btn-signup" style="background-color: red; color: white;">REGISTER</button>
+<p id="messager" style="color: red;"></p>
 <script>
     function redirect()
     {
@@ -26,6 +27,14 @@
     }
     const btn = document.getElementById("btn-signup")
     btn.onclick = redirect
+
+    const msgString = document.getElementById('messager')
+    let text = {{ message|tojson }}
+    msgString.innerHTML = text
+
+
+    
+
 </script>
 
 {% endblock %}
