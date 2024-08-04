@@ -16,6 +16,16 @@
     <input type="email" id="email" name="email" autocomplete="off">
     <br>
     <button type="submit" style="background-color: blue; border: 1px; color:white">VALIDATE</button>
+    
 </form>
+<button id = "btn-signup" style="background-color: red; color: white;">REGISTER</button>
+<script>
+    function redirect()
+    {
+        location.href="http://127.0.0.1:8003/signup"
+    }
+    const btn = document.getElementById("btn-signup")
+    btn.onclick = redirect
+</script>
 
 {% endblock %}
